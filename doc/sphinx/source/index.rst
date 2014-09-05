@@ -12,7 +12,7 @@
 Overview
 --------
 
-PyHRF is a set of tools for within-subject fMRI data analysis, focused on the characterization of the hemodynamics. 
+PyHRF is a set of tools for within-subject fMRI data analysis, which focuses on the characterization of the hemodynamics.
 
 Within the chain of fMRI data processing, these tools provide alternatives to the classical within-subject GLM estimation step. The inputs are preprocessed within-subject data and the outputs are statistical maps and/or fitted HRFs.
 
@@ -23,6 +23,11 @@ The package is mainly written in Python and provides the implementation of the t
       * **The Regularized Finite Impulse Response (RFIR)** approach, which provides HRF estimates for each voxel and experimental conditions. This method embeds a temporal regularization on the HRF shapes, but proceeds independently across voxels (no spatial model).
 
 See :ref:`introduction` for a more detailed overview.
+
+To cite PyHRF and get a comprehensive description, please refer to `this paper <http://journal.frontiersin.org/Journal/10.3389/fnins.2014.00067/>`_:
+
+T. Vincent, S. Badillo, L. Risser, L. Chaari, C. Bakhous, F. Forbes and P. Ciuciu "Flexible multivariate hemodynamics fMRI data analyses and simulations with PyHRF" Font. Neurosci., vol. 8, no. 67, 10 April 2014.
+
 
 .. Developpment status
 .. -------------------
