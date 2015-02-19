@@ -196,11 +196,11 @@ class xndarray:
         >>> from pyhrf.ndarray import xndarray
         >>> c = xndarray(np.random.randn(10,2), axes_names=['x','y'], \
                        axes_domains={'y' : ['plop','plip']})
-        >>> c.get_domain('y')
-        array(['plop', 'plip'], 
-              dtype='|S4')
-        >>> c.get_domain('x') #default domain made of slice indexes
-        array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+        >>> (c.get_domain('y') == np.array(['plop', 'plip'], dtype='|S4')).all()
+        True
+        >>> #default domain made of slice indexes:
+        >>> (c.get_domain('x') == np.array([0,1,2,3,4,5,6,7,8,9])).all()
+        True
         """
         if axis_id in self.axes_domains:
             return self.axes_domains[axis_id]
